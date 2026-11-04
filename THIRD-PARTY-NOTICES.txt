@@ -1,0 +1,79 @@
+Third-party notices
+
+The Ispar client is closed (see TERMS.txt), but it ships and builds on the open parts below. Each keeps its
+own licence, and nothing in TERMS.txt limits what those licences let you do with them.
+
+
+Reloaded.Hooks and its sibling libraries (LGPL-3.0)
+---------------------------------------------------
+runtime\Reloaded.Hooks.dll             Reloaded.Hooks 4.3.3              https://github.com/Reloaded-Project/Reloaded.Hooks
+runtime\Reloaded.Hooks.Definitions.dll Reloaded.Hooks.Definitions 1.15.0 https://github.com/Reloaded-Project/Reloaded.Hooks
+runtime\Reloaded.Memory.dll            Reloaded.Memory 7.0.0             https://github.com/Reloaded-Project/Reloaded.Memory
+runtime\Reloaded.Memory.Buffers.dll    Reloaded.Memory.Buffers 2.0.0     https://github.com/Reloaded-Project/Reloaded.Memory.Buffers
+runtime\Reloaded.Assembler.dll         Reloaded.Assembler 1.0.14-mem-buffers-2.0
+                                                                         https://github.com/Reloaded-Project/Reloaded.Assembler
+
+By Sewer56, licensed under the GNU Lesser General Public License, version 3 (licenses\LGPL-3.0.txt, which
+builds on licenses\GPL-3.0.txt). The source of each version is at its link above and on nuget.org.
+
+They ship unmodified, as separate files. To use your own build, compile the same version (keeping its
+assembly name and version) and replace the DLL in runtime\. The terms allow reverse engineering the Ispar
+client to debug such a replacement.
+
+
+MIT-licensed parts
+------------------
+- .NET runtime (runtime\coreclr.dll, the System.* and Microsoft.* libraries and the rest of the runtime):
+  Copyright (c) .NET Foundation and Contributors. https://github.com/dotnet/runtime
+  Its own third-party notices: https://github.com/dotnet/runtime/blob/main/THIRD-PARTY-NOTICES.TXT
+- Avalonia 11.3.22 (runtime\Avalonia*.dll): Copyright 2013-2026 (c) The AvaloniaUI Project.
+  https://github.com/AvaloniaUI/Avalonia
+- MicroCom.Runtime 0.11.0 (runtime\MicroCom.Runtime.dll): Copyright 2021 (c) Nikita Tsukanov.
+  https://github.com/kekekeks/MicroCom
+- SkiaSharp 2.88.9 and HarfBuzzSharp 8.3.1.1 (runtime\SkiaSharp.dll, runtime\HarfBuzzSharp.dll,
+  runtime\libSkiaSharp.dll, runtime\libHarfBuzzSharp.dll): Copyright (c) Microsoft Corporation.
+  https://github.com/mono/SkiaSharp. The native libraries build on Skia, HarfBuzz and others, whose
+  notices are in licenses\SkiaSharp-THIRD-PARTY-NOTICES.txt.
+- Iced 1.17.0 (runtime\Iced.dll): Copyright (C) 2018-present iced project and contributors.
+  https://github.com/icedland/iced
+- Chorizite's AcClient bindings: Copyright (c) 2024 Michael Cunningham.
+  https://github.com/Chorizite/Chorizite. Addresses and layouts in the client come from them.
+- RynthCore: Copyright (c) 2026 Tom Bohar. https://aelrynth.com/git/RynthCore.git. Addresses and layouts in
+  the client come from it.
+
+Each of these is licensed as follows:
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+  associated documentation files (the "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+  following conditions:
+
+  The above copyright notice and this permission notice shall be included in all copies or substantial
+  portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+  LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+  EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+  THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+flat assembler 1.73 (runtime\FASM.DLL, runtime\FASMX64.DLL)
+-----------------------------------------------------------
+Copyright (c) 1999-2014, Tomasz Grysztar. Shipped with Reloaded.Assembler; its licence is
+runtime\FASM-LICENSE.TXT.
+
+
+Liberation fonts (SIL Open Font License 1.1)
+--------------------------------------------
+The Liberation Sans font built into the client is licensed under the SIL Open Font License 1.1
+(LiberationFonts-LICENSE.txt). https://github.com/liberationfonts/liberation-fonts
+
+
+Landblock place names (CC BY-SA)
+--------------------------------
+The place names the radar shows come from the Asheron's Call Community Wiki,
+https://asheron.fandom.com/wiki/Category:Landblocks, licensed under CC BY-SA. The names were extracted from
+the wiki and reformatted into one line per landblock. That list stays under CC BY-SA; it ships in the
+server source at https://github.com/ispar-ac/server/releases.
