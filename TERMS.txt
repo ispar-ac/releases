@@ -1,0 +1,18 @@
+Ispar client terms
+
+These terms cover the Ispar client: every file in this package except the third-party parts listed in
+THIRD-PARTY-NOTICES.txt, which keep their own licences.
+
+1. You may use the Ispar client for free to play Asheron's Call on Ispar.
+
+2. You may not redistribute, share, sell or resell the Ispar client or any of its files. Point people to
+   https://github.com/ispar-ac/releases instead.
+
+3. You may not modify, decompile, disassemble or reverse engineer the Ispar files. One exception: you may
+   reverse engineer the Ispar client as far as you need to debug your own modified build of Reloaded.Hooks
+   or its sibling libraries (see THIRD-PARTY-NOTICES.txt), which you are free to put in place of ours.
+
+4. The Ispar client is provided as is, without any warranty. We are not liable for any loss or damage from
+   using it, as far as the law allows.
+
+5. Using the Ispar client means you accept these terms. If you do not, uninstall it.
